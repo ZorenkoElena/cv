@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV to IntelliStart</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h2 {
+      margin-bottom: 0.2em;
+      margin-top: 2em;
+    }
+    h4{
+      color: #667;
+      margin-bottom: 0.3em;
+      margin-top: 1.2em;
+    }
+    h3{
+      margin-top: 2.5em;
+      margin-bottom: 0.3em;
+    }
+    
+    .first {
+      margin-top: 0em;
+    }
+    
+    hr {
+      padding: 0;
+      margin: 0;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-content: flex-start;
+
+      padding: 0;
+      margin: 0;
+    }
+
+    .flex-item {
+      padding: 1.5em 1.5em;
+      /* border: 1px solid red; */
+    }
+
+    .flex-left_side {
+      background-color: rgba(224, 225, 241, 1);
+      order: 1;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 250px;
+    }
+    .flex-right_side{
+      order: 2;
+      flex-grow: 5;
+      flex-shrink: 5;
+      flex-basis: 500px;
+    }
+
+    .flex-header-image{
+      order: 1;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 300px;
+      max-width: 300px;
+    }
+    .flex-header-text{
+      order: 2;
+      flex-grow: 5;
+      flex-shrink: 5;
+      flex-basis: 300px;
+      max-width: 300px;
+    }
+
+    .photo{
+      max-width: 300px;
+    }
+    .edu-list{
+      /* вставить сюда код стрелочек в списке */
+    }
+  </style>
+
+</head>
+
+<body class="flex-container">
+
+    <header class="flex-container flex-item flex-left_side">
+      <div class="flex-item flex-header-image">
+        <img class="photo" src="images/photo.png">
+      </div>
+      <div class="flex-item flex-header-text">
+        <h1>Зоренко Елена</h1>
+        <p>31 год</p>
+        <p>г.Одесса</p>
+        <h3>Контактная информация</h3>
+        <h4>Телефон:</h4>
+        <a href="tel:+380662905828">+38(066)-290-58-28</a>
+        <h4>Почта:</h4>
+        <a href="mailto:zorenkoelen@gmail.com">zorenkoelen@gmail.com</a>
+      </div>
+    </header>
+    <main class="flex-item flex-right_side">
+      <section>
+        <h2 class="first">Образование</h2>
+        <hr>
+        <p> Национальный аэрокосмический университет им. Н.Е. Жуковского "Харьковский авиационный институт" </p>
+        <p>Факультет ракетно-космической техники (2007-2013) Магистр</p>
+      </section>
+      <section>
+        <h2>Дополнительное образование</h2>
+        <hr>
+        <ul class="edu-list">
+          <li>Физико-математическая школа Национального аэрокосмического университета им. Н. Е. Жуковского "ХАИ" (2006-2007)</li>
+          <li>Художественная школа (2003-2007)</li>
+          <li>Курс слепой печати ‘Соло на клавиатуре’</li>
+          <li>Курсы "Основы JavaScript, CSS, HTML" на
+            <a href="https://ru.code-basics.com/">https://ru.code-basics.com/</a>
+          </li>
+          <li>Профессия Фронтенд-разработчик на Hexlet (<a href="https://ru.hexlet.io/u/elenazorenko">https://ru.hexlet.io/u/elenazorenko</a>) продолжаю обучение</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Английский язык</h2>
+        <hr>
+        <p>Завершен уровень Intermediate в Skyeng, продолжаю обучение на UpperIntermediate</p>
+      </section>
+      <section>
+        <h2>Опыт работы</h2>
+        <hr>
+        <p>Инженер-конструктор (2013-2021)</p>
+      </section>
+      <section>
+        <h2>Интересы, увлечения</h2>
+        <hr>
+        <p>Отпуск предпочитаю проводить активно - пеший туризм, байдарки, поездки в новые места. В свободное время много гуляю, слушая аудиокниги, складываю пазлы, общаюсь с друзьями. Прошла курс личной и групповой психотерапии.</p>
+      </section>
+      <section>
+        <h2>Дополнительная информация</h2>
+        <hr>
+        <p>
+          Frontend разработка вызывает у меня много интереса, потому что позволяет реализовать и техническую составляющую моего склада ума и творческие мои проявления, ведь нужно предусматривать и чтобы было визуально красиво и чтобы было функционально. 
+        </p>
+        <p>На данный момент обучаюсь самостоятельно. Много интереса и мотивации, но без реальных проектов есть ощущение, что это "знания в стол".</p>
+        <p>Хотела бы попасть к вам на обучающий курс чтобы получить практический опыт совместной работы над реальными проектами.</p>
+        <p>Моя цель - освоить профессию junior frontend developer до лета 2022г.</p>
+      </section>
+    </main>
+</body>
+
+</html>
